@@ -18,6 +18,9 @@ function CharactersFromFilm({ id }) {
                 setLoading(false)
                 setCharactersData(res.characters)
             })
+            .catch(error => {
+                console.error(error)
+            })
     }, [id])
 
     if (loading) {

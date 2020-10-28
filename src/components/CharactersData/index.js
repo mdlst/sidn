@@ -16,6 +16,9 @@ function CharactersData ({ character }){
                 setLoading(false)
                 setCharacterData(res)
             })
+            .catch(error => {
+                console.error(error)
+            })
     }, [character])
 
     if (loading) {

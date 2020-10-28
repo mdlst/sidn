@@ -17,6 +17,9 @@ function ListOfFilms(){
                 setLoading(false)
                 setFilmsData(res)
             })
+            .catch(error => {
+                console.error(error)
+            })
     }, [])
 
     if (loading) {
